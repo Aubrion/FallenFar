@@ -8,38 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="obj_wall">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if other.solid
-{
- var cx,cy,vx,vy,pdir;
- cx = bbox_left + ((bbox_right- bbox_left)/2)
- cy = bbox_bottom + ((bbox_top- bbox_bottom)/2)
- vx = other.bbox_left + ((other.bbox_right- other.bbox_left)/2)
- vy = other.bbox_bottom + ((other.bbox_top- other.bbox_bottom)/2)
- pdir = point_direction(vx,vy,cx,cy);
- move_outside_solid(pdir, -1);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_collision_parent">
       <action>
         <libid>1</libid>
@@ -90,6 +58,38 @@ cx = x - sprite_xoffset + sprite_width/2;
 cy = y - sprite_yoffset + sprite_height/2;
 vx = other.x - other.sprite_xoffset + other.sprite_width/2;
 vy = other.y - other.sprite_yoffset + other.sprite_height/2;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if other.solid
+{
+ var cx,cy,vx,vy,pdir;
+ cx = bbox_left + ((bbox_right- bbox_left)/2)
+ cy = bbox_bottom + ((bbox_top- bbox_bottom)/2)
+ vx = other.bbox_left + ((other.bbox_right- other.bbox_left)/2)
+ vy = other.bbox_bottom + ((other.bbox_top- other.bbox_bottom)/2)
+ pdir = point_direction(vx,vy,cx,cy);
+ move_outside_solid(pdir, -1);
+}
 </string>
           </argument>
         </arguments>

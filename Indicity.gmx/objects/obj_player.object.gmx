@@ -26,7 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>///Init functions
+scale=1
 movespeed=4
+jump=false
+
+
+///calculations
 scr_mass(0)
 </string>
           </argument>
@@ -60,11 +65,13 @@ if keyboard_check(global.key_down)
  if place_free(x,y+movespeed/2){y+=movespeed/2}
 }
 if keyboard_check(global.key_left)
-{ 
+{
+ image_xscale=-scale 
  if place_free(x-movespeed,y){x-=movespeed}
 }
 if keyboard_check(global.key_right)
 {
+ image_xscale=scale
  if place_free(x+movespeed,y){x+=movespeed}
 }
 
