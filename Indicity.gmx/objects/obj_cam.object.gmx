@@ -3,7 +3,7 @@
   <spriteName>spr_block_6_2_1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10000</depth>
+  <depth>100000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -69,7 +69,6 @@ if distance_to_point(obj_player.x,obj_player.y)&gt;=1
 
 //animation
 image_speed=0.8+(distance_to_point(obj_player.x,obj_player.y)/200)
-depth=(1*-y)+3
 
 
 </string>

@@ -26,11 +26,23 @@
     <sprites name="blocks">
       <sprite>sprites\spr_block_6_2_1</sprite>
       <sprite>sprites\spr_block_24_1</sprite>
+      <sprite>sprites\spr_block_24_10_10</sprite>
       <sprite>sprites\spr_block_24_1_1</sprite>
       <sprite>sprites\spr_block_32_1</sprite>
     </sprites>
     <sprite>sprites\spr_none</sprite>
+    <sprites name="helmets">
+      <sprite>sprites\helm_example</sprite>
+      <sprite>sprites\spr_hm_shihozo_shikai</sprite>
+      <sprite>sprites\spr_hm_shihozo</sprite>
+    </sprites>
     <sprite>sprites\spr_player</sprite>
+    <sprites name="greatswords">
+      <sprite>sprites\spr_gs_cyber_1</sprite>
+      <sprite>sprites\spr_gs_cyber_2</sprite>
+      <sprite>sprites\spr_gs_cyber_3</sprite>
+      <sprite>sprites\spr_shihozo_shikai</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -40,10 +52,18 @@
     <script>scripts\scr_mass.gml</script>
     <script>scripts\scr_fullscreen.gml</script>
     <script>scripts\scr_shake_view.gml</script>
+    <scripts name=" Body">
+      <script>scripts\lynx_body_example.gml</script>
+    </scripts>
+    <scripts name="greatsword">
+      <script>scripts\greatsword_unsheated.gml</script>
+      <script>scripts\greatsword_sheated.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
     <object>objects\obj_helm</object>
+    <object>objects\obj_greatsword</object>
     <object>objects\obj_player</object>
     <object>objects\obj_push_dummy</object>
     <object>objects\obj_wall</object>
@@ -52,6 +72,7 @@
     </objects>
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
+      <object>objects\obj_weapon_parent</object>
     </objects>
   </objects>
   <rooms name="rooms">

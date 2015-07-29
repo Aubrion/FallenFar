@@ -80,7 +80,8 @@ vy = other.y - other.sprite_yoffset + other.sprite_height/2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if other.solid
+            <string>///Move out of solid objects 
+if other.solid
 {
  var cx,cy,vx,vy,pdir;
  cx = bbox_left + ((bbox_right- bbox_left)/2)
