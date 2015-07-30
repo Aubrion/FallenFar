@@ -125,7 +125,7 @@ if keyboard_check(ord("Z"))
 
 if state=2
 { 
- lynx_body_example()
+ lynx_body_meteor_strike()
 }
 </string>
           </argument>

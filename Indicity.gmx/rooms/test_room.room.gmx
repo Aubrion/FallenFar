@@ -6,7 +6,7 @@
   <vsnap>24</vsnap>
   <hsnap>24</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>2321714</colour>
   <showcolour>-1</showcolour>
@@ -26,7 +26,7 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
+    <page>1</page>
     <xoffset>-72</xoffset>
     <yoffset>5</yoffset>
   </makerSettings>
