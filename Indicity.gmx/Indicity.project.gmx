@@ -84,6 +84,7 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_element_colors.gml</script>
     <script>scripts\scr_controls.gml</script>
     <script>scripts\scr_depth.gml</script>
     <script>scripts\scr_mass.gml</script>
@@ -97,7 +98,6 @@
       <script>scripts\greatsword_unsheated.gml</script>
       <script>scripts\greatsword_sheated.gml</script>
     </scripts>
-    <script>scripts\scr_element_colors.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
