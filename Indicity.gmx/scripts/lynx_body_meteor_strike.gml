@@ -1,4 +1,3 @@
-///lynx_body_example()
 maxstep=20
 if step<maxstep{step++}else{state=1 step=-1}
 

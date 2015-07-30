@@ -30,13 +30,13 @@
       <sprite>sprites\spr_block_24_1_1</sprite>
       <sprite>sprites\spr_block_32_1</sprite>
     </sprites>
+    <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_none</sprite>
     <sprites name="helmets">
       <sprite>sprites\helm_example</sprite>
       <sprite>sprites\spr_hm_shihozo_shikai</sprite>
       <sprite>sprites\spr_hm_shihozo</sprite>
     </sprites>
-    <sprite>sprites\spr_player</sprite>
     <sprites name="greatswords">
       <sprite>sprites\spr_gs_cyber_1</sprite>
       <sprite>sprites\spr_gs_cyber_2</sprite>
@@ -54,6 +54,7 @@
     <script>scripts\scr_shake_view.gml</script>
     <scripts name=" Body">
       <script>scripts\lynx_body_example.gml</script>
+      <script>scripts\lynx_body_meteor_strike.gml</script>
     </scripts>
     <scripts name="greatsword">
       <script>scripts\greatsword_unsheated.gml</script>
