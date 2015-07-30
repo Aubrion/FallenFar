@@ -43,6 +43,43 @@
       <sprite>sprites\spr_gs_cyber_3</sprite>
       <sprite>sprites\spr_shihozo_shikai</sprite>
     </sprites>
+    <sprites name="elements">
+      <sprite>sprites\e_torndado_icon</sprite>
+      <sprite>sprites\e_voltage_icon</sprite>
+      <sprite>sprites\e_whirl_icon</sprite>
+      <sprite>sprites\e_wind_icon</sprite>
+      <sprite>sprites\e_storm_icon</sprite>
+      <sprite>sprites\e_thunder_icon</sprite>
+      <sprite>sprites\e_titan_icon</sprite>
+      <sprite>sprites\e_torment_icon</sprite>
+      <sprite>sprites\e_passion_icon</sprite>
+      <sprite>sprites\e_scorch_icon</sprite>
+      <sprite>sprites\e_smoke_icon</sprite>
+      <sprite>sprites\e_life_icon</sprite>
+      <sprite>sprites\e_motion_icon</sprite>
+      <sprite>sprites\e_gross_icon</sprite>
+      <sprite>sprites\e_hope_icon</sprite>
+      <sprite>sprites\e_fire_icon</sprite>
+      <sprite>sprites\e_flame_icon</sprite>
+      <sprite>sprites\e_gravity_icon</sprite>
+      <sprite>sprites\e_earth_icon</sprite>
+      <sprite>sprites\e_electric_icon</sprite>
+      <sprite>sprites\e_dread_icon</sprite>
+      <sprite>sprites\e_death_icon</sprite>
+      <sprite>sprites\e_decay_icon</sprite>
+      <sprite>sprites\e_blast_icon</sprite>
+      <sprite>sprites\e_blaze_icon</sprite>
+      <sprite>sprites\e_carbon_icon</sprite>
+      <sprite>sprites\e_water_icon</sprite>
+      <sprite>sprites\e_poison_icon</sprite>
+      <sprite>sprites\e_sacrifice_icon</sprite>
+      <sprite>sprites\e_ice_icon</sprite>
+      <sprite>sprites\e_light_icon</sprite>
+      <sprite>sprites\e_conduction_icon</sprite>
+      <sprite>sprites\e_darkness_icon</sprite>
+      <sprite>sprites\e_ancient_icon</sprite>
+      <sprite>sprites\e_chaos_icon</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -60,6 +97,7 @@
       <script>scripts\greatsword_unsheated.gml</script>
       <script>scripts\greatsword_sheated.gml</script>
     </scripts>
+    <script>scripts\scr_element_colors.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
