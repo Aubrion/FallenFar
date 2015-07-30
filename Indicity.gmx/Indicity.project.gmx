@@ -98,6 +98,9 @@
       <script>scripts\greatsword_unsheated.gml</script>
       <script>scripts\greatsword_sheated.gml</script>
     </scripts>
+    <scripts name="player">
+      <script>scripts\player_movement.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>

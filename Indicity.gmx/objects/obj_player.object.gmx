@@ -29,7 +29,7 @@
 scale=1
 movespeed=2
 jump=false
-
+state=0
 
 ///calculations
 scr_mass(0)
@@ -55,58 +55,21 @@ scr_mass(0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Movement
-if keyboard_check(global.key_up)
-{
- if place_free(x,y-movespeed/2){y-=movespeed/2}
-}
-if keyboard_check(global.key_down)
-{
- if place_free(x,y+movespeed/2){y+=movespeed/2}
-}
-if keyboard_check(global.key_left)
-{
- if obj_weapon_parent.state!=2{image_xscale=-scale} 
- if place_free(x-movespeed,y){x-=movespeed}
-}
-if keyboard_check(global.key_right)
-{
- if obj_weapon_parent.state!=2{image_xscale=scale}
- if place_free(x+movespeed,y){x+=movespeed}
-}
-
-///Animation
-if !keyboard_check(global.key_up) and !keyboard_check(global.key_down)
-and !keyboard_check(global.key_left) and !keyboard_check(global.key_right)
-{
- image_speed=0.01 
-}
- else
-{
- image_speed=(movespeed/10)
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///depth
+            <string>///Player states
 scr_depth()
+switch (state)
+{
+ case 0://normal
+ {
+  player_movement()
+  break; 
+ }
+ case 1://attacking stun
+ {
+  image_speed=0
+  break;
+ }
+}
 </string>
           </argument>
         </arguments>
