@@ -1,33 +1,32 @@
 ///player_attack_movement(dir,steps)
-if argument0=0
+with (obj_player)
 {
- if place_free(global.playerx+argument1,global.playery)
+ if argument0=0
  {
-  obj_player.x+=argument1
-  obj_player.image_speed=(argument1/20)
+  if place_free(global.playerx+argument1,y)
+  {
+   x+=argument1
+  }
  }
-}
-if argument0=90
-{
- if place_free(global.playerx,global.playery+argument1)
+ if argument0=90
  {
-  obj_player.y+=argument1
-  obj_player.image_speed=(argument1/40) 
+  if place_free(global.playerx,y+argument1)
+  {
+   y+=argument1 
+  }
  }
-}
-if argument0=180
-{
- if place_free(global.playerx-argument1,global.playery)
+ if argument0=180
  {
-  obj_player.x-=argument1
-  obj_player.image_speed=(argument1/20) 
+  if place_free(global.playerx-argument1,y)
+  {
+   x-=argument1 
+  }
  }
-}
-if argument0=270
-{
- if place_free(global.playerx,global.playery-argument1)
+ if argument0=270
  {
-  obj_player.y-=argument1
-  obj_player.image_speed=(argument1/40) 
+  if place_free(global.playerx,y-argument1)
+  {
+   y-=argument1
+  }
  }
 }
