@@ -99,6 +99,7 @@
       <script>scripts\greatsword_sheated.gml</script>
     </scripts>
     <scripts name="player">
+      <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
     </scripts>
   </scripts>

@@ -35,4 +35,3 @@ c_light=make_colour_rgb(255,255,255)
 c_darkness=make_colour_rgb(0,0,0)
 c_ancient=make_colour_rgb(33,68,62)
 c_chaos=make_colour_rgb(30,14,82)
-

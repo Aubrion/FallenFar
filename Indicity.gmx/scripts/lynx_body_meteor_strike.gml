@@ -1,9 +1,10 @@
 maxstep=40
-if step<maxstep{step++}else{state=1 step=-1}
+if step<maxstep{step++}else{obj_player.state=0 step=-1 state=1}
 
 ///meteor strike EXAMPLE
 if step=0 
 {
+ obj_player.state=1
  image_angle=0
  image_xscale=obj_player.image_xscale  
  image_yscale=-obj_player.scale
@@ -16,11 +17,13 @@ if step>=1 and step<=30
  {
   image_angle-=6
   x=obj_player.x+2
+  player_attack_movement(0,1)
  }
   else
  {
   image_angle+=6
   x=obj_player.x-2
+  player_attack_movement(180,1)
  } 
 }
  
