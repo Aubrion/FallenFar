@@ -59,10 +59,7 @@ scr_lynx_skill_init();
 var a;
 
 a[0] = 0;
-scr_lynx_skill_set(0, false, a, false, false, "Body Example", 10);
-
-a[0] = 1;
-scr_lynx_skill_set(1, false, a, false, false, "Meteor Strike", 10);
+scr_lynx_skill_set(0, a, "Meteor Strike", 10);
 </string>
           </argument>
         </arguments>
@@ -185,7 +182,7 @@ if (obj_weapon_parent.state != 2)
             if (array_height_2d(skill_data) &gt; 0)
             {
                 var inst = instance_create(x, y, obj_lynx);
-                inst.skill = skill_data;
+                with (inst) {skill = skill_data;}
                 break; // Prevent multiple skills starting at the same step
             }
         }

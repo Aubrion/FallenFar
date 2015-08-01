@@ -65,11 +65,16 @@ if (!initialised &amp;&amp; array_height_2d(skill) &gt; 0)
     {
         for (var j = 0; j &lt; array_length_2d(skill, i); j++)
         {
-            // Execute lynx-part script and tell it to initialize
-            script_execute(obj_regelaar.lynx[skill[i,j],2], true);
-            
-            // Set this parts status to not finished
-            part_finished[i,j] = false;
+            // Check if ID is not -1, which means empty
+            var partID = skill[i,j];
+            if (partID != -1)
+            {
+                // Execute lynx-part script and tell it to initialize
+                script_execute(obj_regelaar.lynx[partID,2], true);
+                
+                // Set this parts status to not finished
+                part_finished[i,j] = false;
+            }
         }
     }
     
@@ -133,9 +138,10 @@ if (initialised)
     {
         for (var j = 0; j &lt; array_length_2d(skill, i); j++)
         {
-            if (!part_finished[i,j])
+            var partID = skill[i,j];
+            if (partID != -1 &amp;&amp; !part_finished[i,j])
             {
-                script_execute(obj_regelaar.lynx[skill[i,j],2], false, i, j);
+                script_execute(obj_regelaar.lynx[partID,2], false, i, j);
                 parts_done = false;
             }
         }

@@ -1,26 +1,13 @@
-/// scr_lynx_skill_set(index, mind, body, element, artificial, name, mana_cost)
+/// scr_lynx_skill_set(index, part_array, name, mana_cost)
 // Mind, Body, Element and Artificial have to be arrays
 // Insert skill in the specified slot, overwriting the current value in it
 
-// Store mind parts
-for (var i = 0; i < array_length_1d(argument1); i++)
-a[0,i] = argument1[i];
-
-// Store mind parts
-for (var i = 0; i < array_length_1d(argument2); i++)
-a[1,i] = argument2[i];
-
-// Store mind parts
-for (var i = 0; i < array_length_1d(argument3); i++)
-a[2,i] = argument3[i];
-
-// Store mind parts
-for (var i = 0; i < array_length_1d(argument4); i++)
-a[3,i] = argument4[i];
+// Sort submitted IDs in an 2D array
+var a = scr_lynx_skill_id_sort(argument1);
 
 // Store other info
-a[4,0] = argument5;
-a[4,1] = argument6;
+a[4,0] = argument2;
+a[4,1] = argument3;
 
 // Store the array in the specified index
 switch (argument0)

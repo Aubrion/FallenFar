@@ -63,14 +63,13 @@
         <script>scripts\scr_lynx_body_meteor_strike.gml</script>
       </scripts>
       <scripts name="Skills">
-        <script>scripts\scr_lynx_skill_add.gml</script>
-        <script>scripts\scr_lynx_skill_first_empty.gml</script>
+        <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
+        <script>scripts\scr_lynx_skill_id_sort.gml</script>
         <script>scripts\scr_lynx_skill_init.gml</script>
         <script>scripts\scr_lynx_skill_object_init.gml</script>
         <script>scripts\scr_lynx_skill_part_finished.gml</script>
         <script>scripts\scr_lynx_skill_remove.gml</script>
         <script>scripts\scr_lynx_skill_set.gml</script>
-        <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
       </scripts>
       <script>scripts\scr_lynx_init.gml</script>
     </scripts>
