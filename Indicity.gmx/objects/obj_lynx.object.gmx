@@ -78,9 +78,6 @@ if (!initialised &amp;&amp; array_height_2d(skill) &gt; 0)
         }
     }
     
-    // Start weapon attack
-    obj_weapon_parent.state = 2;
-    
     // Init completed
     initialised = true;
 }

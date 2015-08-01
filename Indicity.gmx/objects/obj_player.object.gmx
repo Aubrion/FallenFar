@@ -60,6 +60,9 @@ var a;
 
 a[0] = 0;
 scr_lynx_skill_set(0, a, "Meteor Strike", 10);
+
+a[0] = 0;
+scr_lynx_skill_set(1, a, "Meteor Strike", 10);
 </string>
           </argument>
         </arguments>
@@ -155,36 +158,64 @@ scr_depth()
           <argument>
             <kind>1</kind>
             <string>/// Skills
+var skill_activated = false;
+var skill_data;
 
-// Check if skill triggers are pressed
 if (obj_weapon_parent.state != 2)
 {
-    for (var i = 0; i &lt; array_length_1d(lynx_skill_trigger); i++)
+
+    for (var i = 1; i &lt; array_length_1d(lynx_skill_trigger); i++)
     {
         if (keyboard_check_pressed(lynx_skill_trigger[i]))
         {
             // Get skill data
             switch (i)
             {
-                case 0: var skill_data = lynx_skill0; break;
-                case 1: var skill_data = lynx_skill1; break;
-                case 2: var skill_data = lynx_skill2; break;
-                case 3: var skill_data = lynx_skill3; break;
-                case 4: var skill_data = lynx_skill4; break;
-                case 5: var skill_data = lynx_skill5; break;
-                case 6: var skill_data = lynx_skill6; break;
-                case 7: var skill_data = lynx_skill7; break;
-                case 8: var skill_data = lynx_skill8; break;
-                default: var skill_data = false; break;
+                case 1: skill_data = lynx_skill1; break;
+                case 2: skill_data = lynx_skill2; break;
+                case 3: skill_data = lynx_skill3; break;
+                case 4: skill_data = lynx_skill4; break;
+                case 5: skill_data = lynx_skill5; break;
+                case 6: skill_data = lynx_skill6; break;
+                case 7: skill_data = lynx_skill7; break;
+                case 8: skill_data = lynx_skill8; break;
+                default: skill_data = false; break;
             }
-            
+
             // Drop lynx instance
             if (array_height_2d(skill_data) &gt; 0)
             {
+                // Create instance
                 var inst = instance_create(x, y, obj_lynx);
                 with (inst) {skill = skill_data;}
-                break; // Prevent multiple skills starting at the same step
+
+                // Start weapon attack
+                obj_weapon_parent.state = 2;
+                show_debug_message(i);
+
+                // Prevent multiple skills starting at the same step
+                skill_activated = true;
+                break;
             }
+        }
+    }
+
+    // Check for basic attack if no skill has been activated this step
+    if (!skill_activated &amp;&amp; keyboard_check(lynx_skill_trigger[0]))
+    {
+        // Get skill data
+        skill_data = lynx_skill0;
+        
+        // Drop lynx instance
+        if (array_height_2d(skill_data) &gt; 0)
+        {
+            // Create instance
+            var inst = instance_create(x, y, obj_lynx);
+            with (inst) {skill = skill_data;}
+
+            // Start weapon attack
+            obj_weapon_parent.state = 2;
+            show_debug_message(0);
         }
     }
 }
