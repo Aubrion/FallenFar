@@ -115,6 +115,10 @@
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
     </scripts>
+    <scripts name="Enums">
+      <script>scripts\scr_enum_lynx_type.gml</script>
+      <script>scripts\scr_enum_elements.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
