@@ -142,6 +142,7 @@
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_friendly_parent</object>
       <object>objects\obj_lynx_projectile_parent</object>
       <object>objects\obj_weapon_parent</object>
     </objects>
