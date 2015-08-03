@@ -27,14 +27,14 @@
             <kind>1</kind>
             <string>/// Init
 
-skill = -1;
-initialised = false;
-part_finished = false;
-projectiles = false;
-runtime = -1; // Can hook up to this for timed events
+initialized = false;
 
-// Init execution variables
-scr_lynx_skill_object_init();
+// Vars
+spd = 0;
+dir = 0;
+lifetime = 0;
+parent = noone;
+element = -1;
 </string>
           </argument>
         </arguments>
@@ -57,30 +57,18 @@ scr_lynx_skill_object_init();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Init when skill is provided
+            <string>/// Initialize
 
-if (!initialised &amp;&amp; array_height_2d(skill) &gt; 0)
+if (!initialized &amp;&amp; parent != noone)
 {
-    // Call the initialize code for each of the parts
-    for (var i = 0; i &lt; 4; i++)
-    {
-        for (var j = 0; j &lt; array_length_2d(skill, i); j++)
-        {
-            // Check if ID is not -1, which means empty
-            var partID = skill[i,j];
-            if (partID != -1)
-            {
-                // Execute lynx-part script and tell it to initialize
-                script_execute(obj_regelaar.lynx[partID,2], true);
-                
-                // Set this parts status to not finished
-                part_finished[i,j] = false;
-            }
-        }
-    }
+    // Set the blend mode
+    image_blend = obj_regelaar.element_color[elements.fire];
+
+    // Set angle
+    image_angle = dir;
     
-    // Init completed
-    initialised = true;
+    // Initialisation completed
+    initialized = true;
 }
 </string>
           </argument>
@@ -102,10 +90,15 @@ if (!initialised &amp;&amp; array_height_2d(skill) &gt; 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Increase runtime counter
+            <string>/// Count down lifetime
 
-if (initialised)
-    runtime++;
+if (initialized)
+{
+    if (lifetime &gt; 0)
+        lifetime--;
+    else
+        instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -126,43 +119,16 @@ if (initialised)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Execute lynx-parts step code
+            <string>/// Movement &amp; depth
 
-if (initialised)
+if (initialized)
 {
-    var parts_done = true;
-    // Run the step parts of each lynx-part script
-    for (var i = 0; i &lt; 4; i++)
-    {
-        for (var j = 0; j &lt; array_length_2d(skill, i); j++)
-        {
-            var partID = skill[i,j];
-            if (partID != -1 &amp;&amp; !part_finished[i,j])
-            {
-                script_execute(obj_regelaar.lynx[partID,2], false, i, j);
-                parts_done = false;
-            }
-        }
-    }
-
-    // Destroy instance when no parts are running anymore
-    if (parts_done)
-    {
-        // Check if the projectiles are still active
-        var done = true;
-        for (var i = 0; i &lt; array_length_1d(projectiles); i++)
-        {
-            if (instance_exists(projectiles[i]))
-            {
-                done = false;
-                break;
-            }
-        }
-
-        // Done executing this skill
-        if (done)
-            instance_destroy();
-    }
+    // Move
+    x += lengthdir_x(spd, dir);
+    y += lengthdir_y(spd, dir);
+    
+    // Depth
+    depth = y*-1;
 }
 </string>
           </argument>

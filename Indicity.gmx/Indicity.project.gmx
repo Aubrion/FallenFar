@@ -80,6 +80,11 @@
       <sprite>sprites\e_ancient_icon</sprite>
       <sprite>sprites\e_chaos_icon</sprite>
     </sprites>
+    <sprites name="Lynx">
+      <sprites name="Projectiles">
+        <sprite>sprites\spr_lynx_projectile_0</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -100,7 +105,11 @@
         <script>scripts\scr_lynx_body_example.gml</script>
         <script>scripts\scr_lynx_body_meteor_strike.gml</script>
       </scripts>
+      <scripts name="Mind">
+        <script>scripts\scr_lynx_mind_projectile.gml</script>
+      </scripts>
       <scripts name="Skills">
+        <script>scripts\scr_lynx_skill_create_projectile.gml</script>
         <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
         <script>scripts\scr_lynx_skill_id_sort.gml</script>
         <script>scripts\scr_lynx_skill_init.gml</script>
@@ -127,14 +136,20 @@
     <object>objects\obj_player</object>
     <object>objects\obj_push_dummy</object>
     <object>objects\obj_wall</object>
-    <object>objects\obj_lynx</object>
     <objects name="Controllers">
       <object>objects\obj_regelaar</object>
     </objects>
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
-      <object>objects\obj_weapon_parent</object>
       <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_lynx_projectile_parent</object>
+      <object>objects\obj_weapon_parent</object>
+    </objects>
+    <objects name="Lynx">
+      <object>objects\obj_lynx</object>
+      <objects name="Projectiles">
+        <object>objects\obj_lynx_projectile0</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
