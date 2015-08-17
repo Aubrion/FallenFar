@@ -62,7 +62,7 @@ element = -1;
 if (!initialized &amp;&amp; parent != noone)
 {
     // Set the blend mode
-    image_blend = obj_regelaar.element_color[elements.water];
+    image_blend = obj_regelaar.element_color[parent.element_final];
 
     // Set angle
     image_angle = dir;

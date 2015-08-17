@@ -108,8 +108,19 @@
       <scripts name="Mind">
         <script>scripts\scr_lynx_mind_projectile.gml</script>
       </scripts>
+      <scripts name="Element">
+        <script>scripts\scr_lynx_element_death.gml</script>
+        <script>scripts\scr_lynx_element_earth.gml</script>
+        <script>scripts\scr_lynx_element_electro.gml</script>
+        <script>scripts\scr_lynx_element_fire.gml</script>
+        <script>scripts\scr_lynx_element_life.gml</script>
+        <script>scripts\scr_lynx_element_water.gml</script>
+        <script>scripts\scr_lynx_element_wind.gml</script>
+      </scripts>
       <scripts name="Skills">
         <script>scripts\scr_lynx_skill_create_projectile.gml</script>
+        <script>scripts\scr_lynx_skill_element_add.gml</script>
+        <script>scripts\scr_lynx_skill_elements_combine.gml</script>
         <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
         <script>scripts\scr_lynx_skill_id_sort.gml</script>
         <script>scripts\scr_lynx_skill_init.gml</script>

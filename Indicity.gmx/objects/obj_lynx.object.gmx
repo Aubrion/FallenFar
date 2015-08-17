@@ -31,6 +31,8 @@ skill = -1;
 initialised = false;
 part_finished = false;
 projectiles = false;
+element_list = false;
+element_final = -1;
 runtime = -1; // Can hook up to this for timed events
 
 // Init execution variables
@@ -77,6 +79,10 @@ if (!initialised &amp;&amp; array_height_2d(skill) &gt; 0)
                 part_finished[i,j] = false;
             }
         }
+        
+        // Combine the elements
+        if (i == 0) // After the elements (which are the first dimension)
+            scr_lynx_skill_elements_combine();
     }
     
     // Init completed

@@ -37,5 +37,7 @@ enum elements {
     light = 30,
     darkness = 31,
     ancient = 32,
-    chaos = 33
+    chaos = 33,
+    conduction = 34,
+    current = 35
 }

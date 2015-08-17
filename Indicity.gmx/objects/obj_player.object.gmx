@@ -61,9 +61,11 @@ scr_lynx_skill_init();
             <string>/// Assign test skills
 var a;
 
-a[0] = 0; // Body - Meteor Strike
-a[1] = 1; // Mind - Projectile
-scr_lynx_skill_set(1, a, "Meteor Strike", 10);
+a[0] = 7; // Body - Meteor Strike
+a[1] = 8; // Mind - Projectile
+a[2] = 0; // Element - Death
+a[3] = 4; // Element - Life
+scr_lynx_skill_set(0, a, "Meteor Strike", 10);
 </string>
           </argument>
         </arguments>
@@ -180,7 +182,6 @@ if (obj_weapon_parent.state != 2)
 
                 // Start weapon attack
                 obj_weapon_parent.state = 2;
-                show_debug_message(i);
 
                 // Prevent multiple skills starting at the same step
                 skill_activated = true;
@@ -204,7 +205,6 @@ if (obj_weapon_parent.state != 2)
 
             // Start weapon attack
             obj_weapon_parent.state = 2;
-            show_debug_message(0);
         }
     }
 }

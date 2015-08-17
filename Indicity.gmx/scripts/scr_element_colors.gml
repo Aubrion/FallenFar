@@ -38,3 +38,7 @@ element_color[elements.light] = make_colour_rgb(255,255,255);
 element_color[elements.darkness] = make_colour_rgb(0,0,0);
 element_color[elements.ancient] = make_colour_rgb(33,68,62);
 element_color[elements.chaos] = make_colour_rgb(30,14,82);
+
+/// Currently color-less:
+element_color[elements.conduction] = make_colour_rgb(0,0,0);
+element_color[elements.current] = make_colour_rgb(0,0,0);
