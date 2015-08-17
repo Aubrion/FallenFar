@@ -43,3 +43,7 @@ lynx[7,2] = scr_lynx_body_meteor_strike;
 lynx[8,0] = "Projectile";
 lynx[8,1] = lynx_type.mind;
 lynx[8,2] = scr_lynx_mind_projectile;
+
+lynx[9,0] = "Damage Boost";
+lynx[9,1] = lynx_type.artificial;
+lynx[9,2] = scr_lynx_artificial_damage_boost;

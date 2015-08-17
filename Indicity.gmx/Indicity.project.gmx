@@ -117,19 +117,24 @@
         <script>scripts\scr_lynx_element_water.gml</script>
         <script>scripts\scr_lynx_element_wind.gml</script>
       </scripts>
+      <scripts name="Artificial">
+        <script>scripts\scr_lynx_artificial_damage_boost.gml</script>
+      </scripts>
       <scripts name="Skills">
-        <script>scripts\scr_lynx_skill_create_projectile.gml</script>
         <script>scripts\scr_lynx_skill_element_add.gml</script>
         <script>scripts\scr_lynx_skill_elements_combine.gml</script>
         <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
         <script>scripts\scr_lynx_skill_id_sort.gml</script>
         <script>scripts\scr_lynx_skill_init.gml</script>
-        <script>scripts\scr_lynx_skill_object_init.gml</script>
         <script>scripts\scr_lynx_skill_part_finished.gml</script>
         <script>scripts\scr_lynx_skill_remove.gml</script>
         <script>scripts\scr_lynx_skill_set.gml</script>
       </scripts>
+      <scripts name="Skill effects">
+        <script>scripts\scr_lynx_skill_create_projectile.gml</script>
+      </scripts>
       <script>scripts\scr_lynx_init.gml</script>
+      <script>scripts\scr_lynx_skill_object_init.gml</script>
     </scripts>
     <scripts name="player">
       <script>scripts\player_attack_movement.gml</script>
