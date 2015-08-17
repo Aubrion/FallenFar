@@ -1,4 +1,4 @@
-// scr_lynx_mind_projectile(init, i, j)
+/// scr_lynx_mind_projectile(init, i, j)
 var init = argument0;
 var i = argument1;
 var j = argument2;

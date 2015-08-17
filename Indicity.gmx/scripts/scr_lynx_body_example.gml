@@ -1,4 +1,4 @@
-// scr(init, i, j)
+/// scr(init, i, j)
 var init = argument0;
 var i = argument1;
 var j = argument2;
