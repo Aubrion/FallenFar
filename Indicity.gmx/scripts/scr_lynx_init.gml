@@ -47,3 +47,7 @@ lynx[8,2] = scr_lynx_mind_projectile;
 lynx[9,0] = "Damage Boost";
 lynx[9,1] = lynx_type.artificial;
 lynx[9,2] = scr_lynx_artificial_damage_boost;
+
+lynx[10,0] = "Healing Touch";
+lynx[10,1] = lynx_type.artificial;
+lynx[10,2] = scr_lynx_artificial_healing_touch;

@@ -85,6 +85,8 @@
         <sprite>sprites\spr_lynx_projectile_0</sprite>
       </sprites>
     </sprites>
+    <sprite>sprites\spr_dummy_enemy</sprite>
+    <sprite>sprites\spr_dummy_friendly</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -119,11 +121,11 @@
       </scripts>
       <scripts name="Artificial">
         <script>scripts\scr_lynx_artificial_damage_boost.gml</script>
+        <script>scripts\scr_lynx_artificial_healing_touch.gml</script>
       </scripts>
       <scripts name="Skills">
         <script>scripts\scr_lynx_skill_element_add.gml</script>
         <script>scripts\scr_lynx_skill_elements_combine.gml</script>
-        <script>scripts\scr_lynx_skill_hit_WIP.gml</script>
         <script>scripts\scr_lynx_skill_id_sort.gml</script>
         <script>scripts\scr_lynx_skill_init.gml</script>
         <script>scripts\scr_lynx_skill_part_finished.gml</script>
@@ -134,6 +136,7 @@
         <script>scripts\scr_lynx_skill_create_projectile.gml</script>
       </scripts>
       <script>scripts\scr_lynx_init.gml</script>
+      <script>scripts\scr_lynx_skill_hit.gml</script>
       <script>scripts\scr_lynx_skill_object_init.gml</script>
     </scripts>
     <scripts name="player">
@@ -168,6 +171,8 @@
         <object>objects\obj_lynx_projectile0</object>
       </objects>
     </objects>
+    <object>objects\obj_dummy_enemy</object>
+    <object>objects\obj_dummy_friendly</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
