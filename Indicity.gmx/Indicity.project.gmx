@@ -34,13 +34,21 @@
     <sprite>sprites\spr_none</sprite>
     <sprites name="helmets">
       <sprite>sprites\helm_example</sprite>
+      <sprite>sprites\spr_hm_cyber_2</sprite>
+      <sprite>sprites\spr_hm_electro_1</sprite>
+      <sprite>sprites\spr_hm_ice_1</sprite>
       <sprite>sprites\spr_hm_shihozo_shikai</sprite>
       <sprite>sprites\spr_hm_shihozo</sprite>
+      <sprite>sprites\spr_pa_ringleader</sprite>
     </sprites>
     <sprites name="greatswords">
+      <sprite>sprites\spr_gs_example</sprite>
+      <sprite>sprites\spr_gs_electro_1</sprite>
       <sprite>sprites\spr_gs_cyber_1</sprite>
       <sprite>sprites\spr_gs_cyber_2</sprite>
       <sprite>sprites\spr_gs_cyber_3</sprite>
+      <sprite>sprites\spr_gs_ice_1</sprite>
+      <sprite>sprites\spr_gs_poison_1</sprite>
       <sprite>sprites\spr_shihozo_shikai</sprite>
     </sprites>
     <sprites name="elements">
@@ -90,23 +98,29 @@
     <script>scripts\scr_mass.gml</script>
     <script>scripts\scr_fullscreen.gml</script>
     <script>scripts\scr_shake_view.gml</script>
-    <scripts name=" Body">
-      <script>scripts\lynx_body_example.gml</script>
-      <script>scripts\lynx_body_meteor_strike.gml</script>
-    </scripts>
-    <scripts name="greatsword">
-      <script>scripts\greatsword_unsheated.gml</script>
-      <script>scripts\greatsword_sheated.gml</script>
-    </scripts>
     <scripts name="player">
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
+    </scripts>
+    <scripts name=" Body">
+      <script>scripts\lynx_body_meteor_strike.gml</script>
+    </scripts>
+    <scripts name="Weaponstates">
+      <scripts name="polearm">
+        <script>scripts\polearm_unsheated.gml</script>
+        <script>scripts\polearm_sheated.gml</script>
+      </scripts>
+      <scripts name="greatsword">
+        <script>scripts\greatsword_unsheated.gml</script>
+        <script>scripts\greatsword_sheated.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
     <object>objects\obj_helm</object>
     <object>objects\obj_greatsword</object>
+    <object>objects\obj_polearm</object>
     <object>objects\obj_player</object>
     <object>objects\obj_push_dummy</object>
     <object>objects\obj_wall</object>
