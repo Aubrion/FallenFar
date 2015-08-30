@@ -34,6 +34,7 @@
     <sprite>sprites\spr_none</sprite>
     <sprites name="helmets">
       <sprite>sprites\helm_example</sprite>
+      <sprite>sprites\spr_hm_reaper</sprite>
       <sprite>sprites\spr_hm_cyber_2</sprite>
       <sprite>sprites\spr_hm_electro_1</sprite>
       <sprite>sprites\spr_hm_ice_1</sprite>
@@ -78,19 +79,34 @@
       <sprite>sprites\e_chaos_icon</sprite>
     </sprites>
     <sprites name="polearm">
+      <sprites name="scythes">
+        <sprite>sprites\spr_sc_reaper</sprite>
+      </sprites>
       <sprites name="spear">
         <sprite>sprites\spr_sp_ringleader</sprite>
       </sprites>
+      <sprite>sprites\polearm_example</sprite>
     </sprites>
     <sprites name="1handed">
       <sprites name="rapier">
-        <sprite>sprites\sprite74</sprite>
+        <sprite>sprites\spr_ra_lancelot</sprite>
+      </sprites>
+      <sprites name="katana">
+        <sprite>sprites\spr_ka_zenza</sprite>
+      </sprites>
+      <sprites name="sword">
+        <sprite>sprites\spr_sw_altar</sprite>
+      </sprites>
+      <sprites name="dagger">
+        <sprite>sprites\spr_da_firenforest</sprite>
+      </sprites>
+      <sprites name="axe">
+        <sprite>sprites\spr_ax_waterfront</sprite>
       </sprites>
       <sprite>sprites\single_hand_example</sprite>
     </sprites>
     <sprites name="2handed">
       <sprites name="greatswords">
-        <sprite>sprites\spr_gs_example</sprite>
         <sprite>sprites\spr_gs_electro_1</sprite>
         <sprite>sprites\spr_gs_cyber_1</sprite>
         <sprite>sprites\spr_gs_cyber_2</sprite>
@@ -99,6 +115,13 @@
         <sprite>sprites\spr_gs_poison_1</sprite>
         <sprite>sprites\spr_shihozo_shikai</sprite>
       </sprites>
+      <sprites name="warhammer">
+        <sprite>sprites\spr_wh_silverore</sprite>
+      </sprites>
+      <sprites name="BattleAxe">
+        <sprite>sprites\spr_bx_deadwood</sprite>
+      </sprites>
+      <sprite>sprites\spr_gs_example</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -126,13 +149,28 @@
         <script>scripts\greatsword_unsheated.gml</script>
         <script>scripts\greatsword_sheated.gml</script>
       </scripts>
+      <scripts name="warhammer">
+        <script>scripts\warhammer_unsheated.gml</script>
+        <script>scripts\warhammer_sheated.gml</script>
+      </scripts>
+      <scripts name="battleaxe">
+        <script>scripts\battleaxe_unsheated.gml</script>
+        <script>scripts\battleaxe_sheated.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
     <object>objects\obj_helm</object>
-    <object>objects\obj_greatsword</object>
-    <object>objects\obj_polearm</object>
+    <objects name="2handed">
+      <object>objects\obj_greatsword</object>
+      <object>objects\obj_battleaxe</object>
+      <object>objects\obj_warhammer</object>
+    </objects>
+    <objects name="polearm">
+      <object>objects\obj_spear</object>
+      <object>objects\obj_scythe</object>
+    </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_push_dummy</object>
     <object>objects\obj_wall</object>
@@ -142,6 +180,8 @@
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
       <object>objects\obj_weapon_parent</object>
+      <object>objects\obj_twohanded</object>
+      <object>objects\obj_polearm</object>
     </objects>
   </objects>
   <rooms name="rooms">
