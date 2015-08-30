@@ -46,9 +46,10 @@ if instance_exists(obj_polearm)
 {
  if step=0 
  {
-  obj_player.state=1
   image_angle=0
-  image_xscale=obj_player.image_xscale  
+  obj_player.state=1
+  if obj_player.image_xscale<0{image_xscale=1 }
+  if obj_player.image_xscale>0{image_xscale=-1}
   image_yscale=-obj_player.scale
  }
  
@@ -57,15 +58,15 @@ if instance_exists(obj_polearm)
   y=obj_player.y+6
   if image_xscale>0
   {
-   image_angle-=6
+   image_angle+=6
    x=obj_player.x+2
-   player_attack_movement(0,1)
+   player_attack_movement(180,1)
   }
    else
   {
-   image_angle+=6
+   image_angle-=6
    x=obj_player.x-2
-   player_attack_movement(180,1)
+   player_attack_movement(0,1)
   } 
  }
   
@@ -82,7 +83,6 @@ if instance_exists(obj_polearm)
   } 
  }
 }
-
 
 
 

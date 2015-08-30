@@ -39,17 +39,6 @@
       <sprite>sprites\spr_hm_ice_1</sprite>
       <sprite>sprites\spr_hm_shihozo_shikai</sprite>
       <sprite>sprites\spr_hm_shihozo</sprite>
-      <sprite>sprites\spr_pa_ringleader</sprite>
-    </sprites>
-    <sprites name="greatswords">
-      <sprite>sprites\spr_gs_example</sprite>
-      <sprite>sprites\spr_gs_electro_1</sprite>
-      <sprite>sprites\spr_gs_cyber_1</sprite>
-      <sprite>sprites\spr_gs_cyber_2</sprite>
-      <sprite>sprites\spr_gs_cyber_3</sprite>
-      <sprite>sprites\spr_gs_ice_1</sprite>
-      <sprite>sprites\spr_gs_poison_1</sprite>
-      <sprite>sprites\spr_shihozo_shikai</sprite>
     </sprites>
     <sprites name="elements">
       <sprite>sprites\e_torndado_icon</sprite>
@@ -87,6 +76,29 @@
       <sprite>sprites\e_darkness_icon</sprite>
       <sprite>sprites\e_ancient_icon</sprite>
       <sprite>sprites\e_chaos_icon</sprite>
+    </sprites>
+    <sprites name="polearm">
+      <sprites name="spear">
+        <sprite>sprites\spr_sp_ringleader</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="1handed">
+      <sprites name="rapier">
+        <sprite>sprites\sprite74</sprite>
+      </sprites>
+      <sprite>sprites\single_hand_example</sprite>
+    </sprites>
+    <sprites name="2handed">
+      <sprites name="greatswords">
+        <sprite>sprites\spr_gs_example</sprite>
+        <sprite>sprites\spr_gs_electro_1</sprite>
+        <sprite>sprites\spr_gs_cyber_1</sprite>
+        <sprite>sprites\spr_gs_cyber_2</sprite>
+        <sprite>sprites\spr_gs_cyber_3</sprite>
+        <sprite>sprites\spr_gs_ice_1</sprite>
+        <sprite>sprites\spr_gs_poison_1</sprite>
+        <sprite>sprites\spr_shihozo_shikai</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
