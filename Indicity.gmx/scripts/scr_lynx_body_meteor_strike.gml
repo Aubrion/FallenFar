@@ -7,6 +7,7 @@ var finished = false;
 // Init code
 if (init)
 {
+    damage += 10;
 }
 
 // Step code
@@ -38,6 +39,12 @@ else
                 image_angle+=12
                 x=obj_player.x-2
             } 
+        }
+        
+        if step=15
+        {
+            with (other)
+                scr_lynx_skill_weapon_hit(5, 60, 30, false);
         }
     
         if step>=16

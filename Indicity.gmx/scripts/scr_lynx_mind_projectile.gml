@@ -6,7 +6,6 @@ var j = argument2;
 // Init code
 if (init)
 {
-    damage += 10;
 }
 
 // Step code

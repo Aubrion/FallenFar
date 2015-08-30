@@ -154,11 +154,14 @@ if (initialized)
             <kind>1</kind>
             <string>/// Handle collision
 
-// Execute skill effects
-scr_lynx_skill_hit(parent, other);
+if (other.object_index != parent.parent.object_index)
+{
+    // Execute skill effects
+    scr_lynx_skill_hit(parent, other);
 
-// Destroy
-instance_destroy();
+    // Destroy
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

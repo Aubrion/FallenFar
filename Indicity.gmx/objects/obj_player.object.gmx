@@ -153,6 +153,7 @@ switch (state)
             <string>/// Skills
 var skill_activated = false;
 var skill_data;
+var player = id;
 
 if (obj_weapon_parent.state != 2)
 {
@@ -180,7 +181,7 @@ if (obj_weapon_parent.state != 2)
             {
                 // Create instance
                 var inst = instance_create(x, y, obj_lynx);
-                with (inst) {skill = skill_data;}
+                with (inst) {skill = skill_data; parent = other.id;}
 
                 // Start weapon attack
                 obj_weapon_parent.state = 2;
@@ -203,7 +204,7 @@ if (obj_weapon_parent.state != 2)
         {
             // Create instance
             var inst = instance_create(x, y, obj_lynx);
-            with (inst) {skill = skill_data;}
+            with (inst) {skill = skill_data; parent = other.id;}
 
             // Start weapon attack
             obj_weapon_parent.state = 2;

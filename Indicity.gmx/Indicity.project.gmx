@@ -131,6 +131,7 @@
         <script>scripts\scr_lynx_skill_part_finished.gml</script>
         <script>scripts\scr_lynx_skill_remove.gml</script>
         <script>scripts\scr_lynx_skill_set.gml</script>
+        <script>scripts\scr_lynx_skill_weapon_hit.gml</script>
       </scripts>
       <scripts name="Skill effects">
         <script>scripts\scr_lynx_skill_create_projectile.gml</script>

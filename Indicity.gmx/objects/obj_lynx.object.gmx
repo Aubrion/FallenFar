@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>/// Init
 
+parent = noone;
 skill = -1;
 initialised = false;
 part_finished = false;
