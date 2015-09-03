@@ -144,9 +144,13 @@
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
     </scripts>
+    <scripts name="Buffs">
+      <script>scripts\scr_buff_add.gml</script>
+    </scripts>
     <scripts name="Enums">
-      <script>scripts\scr_enum_lynx_type.gml</script>
       <script>scripts\scr_enum_elements.gml</script>
+      <script>scripts\scr_enum_lynx_type.gml</script>
+      <script>scripts\scr_enum_stats.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -161,6 +165,7 @@
     </objects>
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
+      <object>objects\obj_combat_parent</object>
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_friendly_parent</object>
       <object>objects\obj_lynx_projectile_parent</object>

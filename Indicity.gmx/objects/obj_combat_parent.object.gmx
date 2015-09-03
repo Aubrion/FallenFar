@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_collision_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,11 +25,27 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Enum Scripts
+            <string>/// Init Stats
 
-scr_enum_lynx_type();
-scr_enum_elements();
-scr_enum_stats();
+// Base Stats (actual value, overwrite in children)
+base_stat[stats.hp] = 0;
+base_stat[stats.mp] = 0;
+base_stat[stats.str] = 10;
+base_stat[stats.def] = 0;
+base_stat[stats.agi] = 0;
+base_stat[stats.int] = 0;
+base_stat[stats.will] = 0;
+base_stat[stats.mspeed] = 0;
+
+// Stats (curent value)
+stat[stats.hp] = 0;
+stat[stats.mp] = 0;
+stat[stats.str] = 0;
+stat[stats.def] = 0;
+stat[stats.agi] = 0;
+stat[stats.int] = 0;
+stat[stats.will] = 0;
+stat[stats.mspeed] = 0;
 </string>
           </argument>
         </arguments>
@@ -50,11 +66,15 @@ scr_enum_stats();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Initialising Scripts
-scr_controls();
-scr_fullscreen();
-scr_lynx_init();
-scr_element_colors();
+            <string>/// Vars
+
+/* Buffs 2nd demension layout:
+   0 = stat (from the stat enum)
+   1 = type (0 for numbers, 1 for percentages)
+   2 = value
+   3 = remaining time (in steps)
+*/
+buffs = false; // Array to store the buffs
 </string>
           </argument>
         </arguments>
@@ -77,59 +97,74 @@ scr_element_colors();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///zoomfactor
-view_wview=dw/zoomfactor
-view_hview=dh/zoomfactor
+            <string>/// Process buffs
+var newBuffs = false;
 
-if keyboard_check_pressed(vk_subtract)
+// Init values at 0
+var values = false;
+for (var i = 0; i &lt; 4; i++) // 0 = posNumber, 1 = posPercent, 2 = negNumber, 3 = negPercent
 {
- if zoomfactor&gt;1 {zoomfactor--}
+    for (var j = 0; j &lt; array_length_1d(stat); j++)
+        values[i,j] = 0;
 }
-if keyboard_check_pressed(vk_add)
+
+// Process buffs
+for (var i = 0; i &lt; array_height_2d(buffs); i++)
 {
- if zoomfactor&lt;5 {zoomfactor++}
+    // Exclude expired buffs
+    if (buffs[i,3] &gt; 1)
+    {
+        // Reduce time
+        buffs[i,3]--;
+        
+        // Store value
+        var val = buffs[i,2];
+        var store_index = ((val &lt; 0) * 2) + buffs[i,1];
+        values[store_index, buffs[i,0]] += val;
+        
+        // Add to new Buffs array
+        var newIndex = array_height_2d(newBuffs);
+        for (var j = 0; j &lt; array_length_2d(buffs, i); j++)
+            newBuffs[newIndex, j] = buffs[i,j];
+    }
+}
+
+// Apply values
+for (var i = 0; i &lt; array_length_1d(stat); i++)
+{
+    var result = base_stat[i];
+    for (j = 0; j &lt; array_height_2d(values); j++)
+    {
+        if (j == 1) // Positive Percent
+        {
+            if (values[j,i] != 0)
+                result = result + (result * (values[j,i] / 100));
+        }
+        else if (j == 3) // Negative Percent
+        {
+            if (values[j,i] != 0)
+            {
+                var temp_result = result + (result * (values[j,i] / 100));
+                if (temp_result &lt; 0) result = 0;
+                else result = temp_result;
+            }
+        }
+        else // Numbers
+            result += values[j,i];
+    }
+    stat[i] = result;
+}
+
+// Write new buff array
+buffs = false;
+for (var i = 0; i &lt; array_height_2d(newBuffs); i++)
+{
+    for (var j = 0; j &lt; array_length_2d(newBuffs, i); j++)
+        buffs[i,j] = newBuffs[i,j];
 }
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="115">
-      <action>
-        <libid>1</libid>
-        <id>531</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_fullscreen</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="27">
-      <action>
-        <libid>1</libid>
-        <id>332</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_end_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
