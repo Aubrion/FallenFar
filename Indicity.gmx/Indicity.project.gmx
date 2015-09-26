@@ -158,6 +158,7 @@
         <script>scripts\battleaxe_sheated.gml</script>
       </scripts>
     </scripts>
+    <script>scripts\scr_blur.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
@@ -172,8 +173,13 @@
       <object>objects\obj_scythe</object>
     </objects>
     <object>objects\obj_player</object>
-    <object>objects\obj_push_dummy</object>
-    <object>objects\obj_wall</object>
+    <objects name="room">
+      <object>objects\obj_wall</object>
+      <object>objects\obj_push_dummy</object>
+    </objects>
+    <objects name="effects">
+      <object>objects\obj_fade</object>
+    </objects>
     <objects name="Controllers">
       <object>objects\obj_regelaar</object>
     </objects>

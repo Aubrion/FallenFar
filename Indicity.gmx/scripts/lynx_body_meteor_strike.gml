@@ -13,6 +13,7 @@ if instance_exists(obj_twohanded)
  
  if step>=1 and step<=30
  {
+  scr_blur(25,5)
   y=obj_player.y+6
   if image_xscale>0
   {
@@ -55,6 +56,7 @@ if instance_exists(obj_polearm)
  
  if step>=1 and step<=30
  {
+  scr_blur(25,5)
   y=obj_player.y+6
   if image_xscale>0
   {
@@ -83,7 +85,6 @@ if instance_exists(obj_polearm)
   } 
  }
 }
-
 
 
 

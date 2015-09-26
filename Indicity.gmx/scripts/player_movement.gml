@@ -26,5 +26,12 @@ and !keyboard_check(global.key_left) and !keyboard_check(global.key_right)
 }
  else
 {
- image_speed=(movespeed/10)
+ if keyboard_check(global.key_up) or keyboard_check(global.key_down)
+ {
+  image_speed=(movespeed/15)
+ }
+ if keyboard_check(global.key_left) or keyboard_check(global.key_right)
+ {
+  image_speed=(movespeed/10)
+ }
 }
