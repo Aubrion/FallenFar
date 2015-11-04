@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>obj_combat_parent</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,12 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Parent code
-event_inherited();
+            <string>/// Init
+init = false;
+width = 0;
+height = 0;
+mob = noone;
+mobs_max = 0;
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -47,16 +53,22 @@ event_inherited();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Sprites
-sprite_idle = sprite_index;
-sprite_attack = sprite_index;
-sprite_die = sprite_index;
-sprite_walk = sprite_index;
+            <string>/// Init
 
-sprite_idle_speed = 0;
-sprite_attack_speed = 0;
-sprite_die_speed = 0;
-sprite_walk_speed = 0;
+if (!init)
+{
+    // Initial spawn
+    for (var i = 0; i &lt; mobs_max; i++)
+    {
+        var xx = irandom_range(x-(width/2), x+(width/2));
+        var yy = irandom_range(y-(height/2), y+(height/2));
+        var inst = instance_create(xx, yy, mob);
+        inst.spawn = id;
+    }
+
+    // Prevent this code from running again
+    init = true;
+}
 </string>
           </argument>
         </arguments>

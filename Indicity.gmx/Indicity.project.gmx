@@ -6,6 +6,20 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="Spawn Points">
+      <sprite>sprites\spr_trufflin_spawn</sprite>
+    </sprites>
+    <sprites name="Mobs">
+      <sprites name="Melee">
+        <sprites name="Trufflin">
+          <sprite>sprites\spr_mob_trufflin_attack</sprite>
+          <sprite>sprites\spr_mob_trufflin_die</sprite>
+          <sprite>sprites\spr_mob_trufflin_hit</sprite>
+          <sprite>sprites\spr_mob_trufflin_idle</sprite>
+          <sprite>sprites\spr_mob_trufflin_walk</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
     <sprites name="eyes">
       <sprite>sprites\spr_eyes_1</sprite>
       <sprite>sprites\spr_eyes_2</sprite>
@@ -151,6 +165,7 @@
       <script>scripts\scr_enum_elements.gml</script>
       <script>scripts\scr_enum_lynx_type.gml</script>
       <script>scripts\scr_enum_stats.gml</script>
+      <script>scripts\scr_enum_ai_states.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -169,6 +184,7 @@
       <object>objects\obj_enemy_parent</object>
       <object>objects\obj_friendly_parent</object>
       <object>objects\obj_lynx_projectile_parent</object>
+      <object>objects\obj_spawn_parent</object>
       <object>objects\obj_weapon_parent</object>
     </objects>
     <objects name="Lynx">
@@ -179,6 +195,14 @@
     </objects>
     <object>objects\obj_dummy_enemy</object>
     <object>objects\obj_dummy_friendly</object>
+    <objects name="Spawn points">
+      <object>objects\obj_spawn_trufflin</object>
+    </objects>
+    <objects name="Mobs">
+      <objects name="Melee">
+        <object>objects\obj_mob_trufflin</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
