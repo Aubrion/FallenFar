@@ -6,11 +6,11 @@ var target = argument1;
 // Add all negative effects (damage, debuffs, status effects, etc) here
 if (object_is_ancestor(target.object_index, obj_enemy_parent))
 {
-    target.hp -= lynx.damage + (lynx.damage * lynx.damage_boost); // Deal boosted damage to enemy
+    target.stat[stats.hp] -= lynx.damage + (lynx.damage * lynx.damage_boost); // Deal boosted damage to enemy
 }
 
 // Add all positive effects (healing, buffs, etc) here
 else if (object_is_ancestor(target.object_index, obj_friendly_parent))
 {
-    target.hp += (lynx.damage + lynx.damage * lynx.damage_boost) * lynx.heal_for_damage_percent // Heal for a percentage of boosteed damage
+    target.stat[stats.hp] += (lynx.damage + lynx.damage * lynx.damage_boost) * lynx.heal_for_damage_percent // Heal for a percentage of boosteed damage
 }
