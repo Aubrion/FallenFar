@@ -108,6 +108,7 @@
     <script>scripts\scr_element_colors.gml</script>
     <script>scripts\scr_controls.gml</script>
     <script>scripts\scr_depth.gml</script>
+    <script>scripts\scr_draw_healtbar.gml</script>
     <script>scripts\scr_mass.gml</script>
     <script>scripts\scr_fullscreen.gml</script>
     <script>scripts\scr_shake_view.gml</script>

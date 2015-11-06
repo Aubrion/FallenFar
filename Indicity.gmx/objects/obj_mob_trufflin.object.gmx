@@ -47,6 +47,47 @@ event_inherited();
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Init Stats
+
+// Base Stats (actual value, overwrite in children)
+base_stat[stats.hp] = 100;
+base_stat[stats.mp] = 100;
+base_stat[stats.str] = 10;
+base_stat[stats.def] = 10;
+base_stat[stats.agi] = 10;
+base_stat[stats.int] = 10;
+base_stat[stats.will] = 10;
+base_stat[stats.mspeed] = 0.5;
+
+// Stats (curent value)
+stat[stats.hp] = 0;
+stat[stats.mp] = 0;
+stat[stats.str] = 0;
+stat[stats.def] = 0;
+stat[stats.agi] = 0;
+stat[stats.int] = 0;
+stat[stats.will] = 0;
+stat[stats.mspeed] = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Sprites
 sprite_idle = spr_mob_trufflin_idle;
 sprite_attack = spr_mob_trufflin_attack;
