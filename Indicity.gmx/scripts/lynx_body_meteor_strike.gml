@@ -1,6 +1,8 @@
+//info
 maxstep=40
 if step<maxstep{step++}else{obj_player.state=0 step=-1 state=1}
-///Greatsword
+
+///Greatweapon
 if instance_exists(obj_twohanded)
 {
  if step=0 

@@ -30,6 +30,7 @@ scale=1
 movespeed=2
 jump=false
 state=0
+ylook=1
 global.playerx=bbox_left + ((bbox_right- bbox_left)/2)
 global.playery=bbox_bottom + ((bbox_top- bbox_bottom)/2)
 ///calculations
