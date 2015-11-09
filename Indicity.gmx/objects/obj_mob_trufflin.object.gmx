@@ -49,9 +49,9 @@ event_inherited();
             <kind>1</kind>
             <string>/// Init Stats
 
-// Base Stats (actual value, overwrite in children)
-base_stat[stats.hp] = 100;
-base_stat[stats.mp] = 100;
+// Base Stats
+base_stat[stats.mhp] = 100;
+base_stat[stats.msp] = 100;
 base_stat[stats.str] = 10;
 base_stat[stats.def] = 10;
 base_stat[stats.agi] = 10;
@@ -59,15 +59,9 @@ base_stat[stats.int] = 10;
 base_stat[stats.will] = 10;
 base_stat[stats.mspeed] = 0.5;
 
-// Stats (curent value)
-stat[stats.hp] = 0;
-stat[stats.mp] = 0;
-stat[stats.str] = 0;
-stat[stats.def] = 0;
-stat[stats.agi] = 0;
-stat[stats.int] = 0;
-stat[stats.will] = 0;
-stat[stats.mspeed] = 0;
+// Max out hp and sp
+stat[stats.hp] = base_stat[stats.mhp];
+stat[stats.sp] = base_stat[stats.msp];
 </string>
           </argument>
         </arguments>

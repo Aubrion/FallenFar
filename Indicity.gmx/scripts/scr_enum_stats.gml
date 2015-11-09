@@ -2,7 +2,9 @@
 
 enum stats {
     hp,
-    mp,
+    mhp,
+    sp,
+    msp,
     str,
     def,
     agi,

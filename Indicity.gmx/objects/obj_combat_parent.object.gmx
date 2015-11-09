@@ -28,9 +28,9 @@
             <string>/// Init Stats
 
 // Base Stats (actual value, overwrite in children)
-base_stat[stats.hp] = 0;
-base_stat[stats.mp] = 0;
-base_stat[stats.str] = 10;
+base_stat[stats.mhp] = 0;
+base_stat[stats.msp] = 0;
+base_stat[stats.str] = 0;
 base_stat[stats.def] = 0;
 base_stat[stats.agi] = 0;
 base_stat[stats.int] = 0;
@@ -39,7 +39,9 @@ base_stat[stats.mspeed] = 0;
 
 // Stats (curent value)
 stat[stats.hp] = 0;
-stat[stats.mp] = 0;
+stat[stats.sp] = 0;
+stat[stats.mhp] = 1; // Prevent divide by zero error int scr_draw_healthbar on first step
+stat[stats.msp] = 1; // Prevent divide by zero error int scr_draw_healthbar on first step
 stat[stats.str] = 0;
 stat[stats.def] = 0;
 stat[stats.agi] = 0;
@@ -202,6 +204,10 @@ for (var i = 0; i &lt; array_height_2d(buffs); i++)
 // Apply values
 for (var i = 0; i &lt; array_length_1d(stat); i++)
 {
+    // Prevent processing hp and sp
+    if (i == stats.hp || i == stats.hp)
+        continue;
+
     var result = base_stat[i];
     for (j = 0; j &lt; array_height_2d(values); j++)
     {
@@ -232,6 +238,30 @@ for (var i = 0; i &lt; array_height_2d(newBuffs); i++)
     for (var j = 0; j &lt; array_length_2d(newBuffs, i); j++)
         buffs[i,j] = newBuffs[i,j];
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Clamp hp and sp
+
+stat[stats.hp] = clamp(stat[stats.hp], 0, stat[stats.mhp]);
+stat[stats.sp] = clamp(stat[stats.sp], 0, stat[stats.msp]);
 </string>
           </argument>
         </arguments>
@@ -284,7 +314,7 @@ if (default_healthbar)
         healthbar_width,
         healthbar_height,
         stat[stats.hp],
-        base_stat[stats.hp],
+        stat[stats.mhp],
         c_red
     );
 </string>
