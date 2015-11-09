@@ -83,12 +83,16 @@ scr_lynx_skill_init();
             <string>/// Assign test skills
 var a;
 
-a[0] = 7;  // Body - Meteor Strike
+/*a[0] = 7;  // Body - Meteor Strike
 a[1] = 8;  // Mind - Projectile
 a[2] = 0;  // Element - Death
 a[3] = 4;  // Element - Life
 a[4] = 9;  // Artificial - Damage Boost
 a[5] = 10; // Artificial - Healing Touch
+scr_lynx_skill_set(0, a, "Meteor Strike", 10);*/
+
+a[0] = 7; // Body - Meteor Strike
+a[1] = 2; // Element Electro
 scr_lynx_skill_set(0, a, "Meteor Strike", 10);
 </string>
           </argument>

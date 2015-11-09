@@ -29,6 +29,6 @@ with (obj_collision_parent)
             attacker.x+max(xdist[0], xdist[1]),
             attacker.y+(attack_height/2))))
     {
-        scr_lynx_skill_hit(lynx_object, object_index);
+        scr_lynx_skill_hit(lynx_object, id);
     }
 }
