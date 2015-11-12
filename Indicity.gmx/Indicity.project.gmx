@@ -168,6 +168,13 @@
       <script>scripts\scr_enum_stats.gml</script>
       <script>scripts\scr_enum_ai_states.gml</script>
     </scripts>
+    <scripts name="mobAI">
+      <scripts name="states">
+        <script>scripts\scr_AI_mob_dead.gml</script>
+        <script>scripts\scr_AI_mob_idle.gml</script>
+      </scripts>
+      <script>scripts\scr_AI_mob_handle_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
@@ -194,8 +201,6 @@
         <object>objects\obj_lynx_projectile0</object>
       </objects>
     </objects>
-    <object>objects\obj_dummy_enemy</object>
-    <object>objects\obj_dummy_friendly</object>
     <objects name="Spawn points">
       <object>objects\obj_spawn_trufflin</object>
     </objects>
