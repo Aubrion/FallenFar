@@ -148,6 +148,7 @@
       <scripts name="greatsword">
         <script>scripts\greatsword_unsheated.gml</script>
         <script>scripts\greatsword_sheated.gml</script>
+        <script>scripts\greatsword_defend.gml</script>
       </scripts>
       <scripts name="warhammer">
         <script>scripts\warhammer_unsheated.gml</script>
@@ -159,6 +160,11 @@
       </scripts>
     </scripts>
     <script>scripts\scr_blur.gml</script>
+    <scripts name="Basic Attacks">
+      <script>scripts\gs_attack_1.gml</script>
+      <script>scripts\gs_attack_2.gml</script>
+      <script>scripts\script21.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>

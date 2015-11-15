@@ -8,7 +8,7 @@ i.xscale=image_xscale
 i.yscale=image_yscale
 i.sprite=sprite_index
 i.imageindex=image_index
-i.depth=depth
+i.depth=depth-1
 
 
 
