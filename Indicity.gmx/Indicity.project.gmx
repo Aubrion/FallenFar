@@ -123,8 +123,14 @@
       </sprites>
       <sprite>sprites\spr_gs_example</sprite>
     </sprites>
+    <sprites name="critter">
+      <sprite>sprites\spr_frog_2</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\tile_example</background>
+    <background>background\background2</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_element_colors.gml</script>
@@ -163,7 +169,6 @@
     <scripts name="Basic Attacks">
       <script>scripts\gs_attack_1.gml</script>
       <script>scripts\gs_attack_2.gml</script>
-      <script>scripts\script21.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -194,6 +199,9 @@
       <object>objects\obj_weapon_parent</object>
       <object>objects\obj_twohanded</object>
       <object>objects\obj_polearm</object>
+    </objects>
+    <objects name="cripper">
+      <object>objects\critter_frog</object>
     </objects>
   </objects>
   <rooms name="rooms">
