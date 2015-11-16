@@ -142,6 +142,7 @@
     <scripts name="player">
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
+      <script>scripts\player_defend_movement.gml</script>
     </scripts>
     <scripts name=" Body">
       <script>scripts\lynx_body_meteor_strike.gml</script>
@@ -166,9 +167,11 @@
       </scripts>
     </scripts>
     <script>scripts\scr_blur.gml</script>
-    <scripts name="Basic Attacks">
+    <scripts name="gs Basic moves">
       <script>scripts\gs_attack_1.gml</script>
       <script>scripts\gs_attack_2.gml</script>
+      <script>scripts\gs_attack_3.gml</script>
+      <script>scripts\gs_defend.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

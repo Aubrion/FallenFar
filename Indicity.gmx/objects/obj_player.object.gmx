@@ -96,6 +96,11 @@ switch (state)
   image_speed=0
   break;
  }
+ case 2://defending
+ {
+  player_defend_movement()
+  break;
+ }
 }
 </string>
           </argument>
