@@ -22,7 +22,7 @@ if keyboard_check(global.key_up)
 
 if keyboard_check(global.key_down)
 {
- o=-2
+ o=1
  if obj_player.image_xscale>0{image_angle=355}else{image_angle=5}
 }
 
@@ -35,5 +35,5 @@ if !keyboard_check(global.key_up) and !keyboard_check(global.key_down)
 if (!keyboard_check(global.key_up)  and !keyboard_check(global.key_down)) or
    ( keyboard_check(global.key_up)  and  keyboard_check(global.key_down)) 
 {
- image_angle=0
-}
+ image_angle=0              
+}                           

@@ -126,6 +126,28 @@
     <sprites name="critter">
       <sprite>sprites\spr_frog_2</sprite>
     </sprites>
+    <sprites name="nodes">
+      <sprite>sprites\spr_node_darqantium</sprite>
+      <sprite>sprites\spr_node_bloodstone</sprite>
+      <sprite>sprites\spr_node_magicite</sprite>
+      <sprite>sprites\spr_node_adamantium</sprite>
+      <sprite>sprites\spr_node_gold</sprite>
+      <sprite>sprites\spr_node_silver</sprite>
+      <sprite>sprites\spr_node_mithril</sprite>
+      <sprite>sprites\spr_node_iron</sprite>
+      <sprite>sprites\spr_node_iron_shadow</sprite>
+      <sprite>sprites\spr_node_bronze</sprite>
+    </sprites>
+    <sprite>sprites\spr_node_empty</sprite>
+    <sprite>sprites\mask_node</sprite>
+    <sprite>sprites\spr_tree1_bottom</sprite>
+    <sprite>sprites\spr_tree1_middle</sprite>
+    <sprite>sprites\spr_tree3_top</sprite>
+    <sprite>sprites\spr_tree2_top</sprite>
+    <sprite>sprites\spr_tree1_top</sprite>
+    <sprite>sprites\spr_tree_2_mask</sprite>
+    <sprite>sprites\spr_tree_2</sprite>
+    <sprite>sprites\spr_node_outline</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_example</background>
@@ -166,13 +188,20 @@
         <script>scripts\battleaxe_sheated.gml</script>
       </scripts>
     </scripts>
-    <script>scripts\scr_blur.gml</script>
-    <scripts name="gs Basic moves">
-      <script>scripts\gs_attack_1.gml</script>
-      <script>scripts\gs_attack_2.gml</script>
-      <script>scripts\gs_attack_3.gml</script>
-      <script>scripts\gs_defend.gml</script>
+    <scripts name="Basic Moves">
+      <scripts name="gs Basic Moves">
+        <script>scripts\gs_attack_1.gml</script>
+        <script>scripts\gs_attack_2.gml</script>
+        <script>scripts\gs_attack_3.gml</script>
+        <script>scripts\gs_defend.gml</script>
+      </scripts>
+      <scripts name="ba Basic Moves">
+        <script>scripts\ba_attack_1.gml</script>
+        <script>scripts\ba_defend.gml</script>
+      </scripts>
     </scripts>
+    <script>scripts\scr_blur.gml</script>
+    <script>scripts\create_mask_object.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
@@ -191,20 +220,29 @@
       <object>objects\obj_wall</object>
       <object>objects\obj_push_dummy</object>
     </objects>
-    <objects name="effects">
+    <objects name="effects&amp;other">
       <object>objects\obj_fade</object>
+      <object>objects\obj_mask_maker</object>
     </objects>
     <objects name="Controllers">
       <object>objects\obj_regelaar</object>
+      <object>objects\obj_shadows</object>
     </objects>
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
       <object>objects\obj_weapon_parent</object>
+      <object>objects\obj_node_parent</object>
       <object>objects\obj_twohanded</object>
       <object>objects\obj_polearm</object>
     </objects>
     <objects name="cripper">
       <object>objects\critter_frog</object>
+    </objects>
+    <objects name="nodes">
+      <object>objects\obj_node_iron</object>
+    </objects>
+    <objects name="decoration">
+      <object>objects\obj_tree_2</object>
     </objects>
   </objects>
   <rooms name="rooms">

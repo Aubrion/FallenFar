@@ -85,58 +85,6 @@ state=0
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///states
-switch (state)
-{
- case 0://sheated
- {
-  alarm[0]=-1
-  greatsword_sheated()
-  break; 
- }
- case 1://unsheated
- {
-  if alarm[0]=-1 {alarm[0]=1000}
-  greatsword_unsheated() 
-  break;
- }
- case 2://attacking
- {
-  alarm[0]=-1
-  depth=obj_player.depth-3
-  break;
- }
- case 3://defend
- {
-  alarm[0]=-1
- }
- case 4://freeze
- {
-  alarm[0]=-1  
- }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -191,6 +139,57 @@ if state=3
  gs_defend()
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///states
+switch (state)
+{
+ case 0://sheated
+ {
+  alarm[0]=-1
+  greatsword_sheated()
+  break; 
+ }
+ case 1://unsheated
+ {
+  if alarm[0]=-1 {alarm[0]=800}
+  greatsword_unsheated() 
+  break;
+ }
+ case 2://attacking
+ {
+  alarm[0]=-1
+  depth=obj_player.depth-3
+  break;
+ }
+ case 3://defend
+ {
+  alarm[0]=-1
+  depth=obj_player.depth-3
+ }
+ case 4://freeze
+ {
+  alarm[0]=-1  
+ }
+}
 </string>
           </argument>
         </arguments>

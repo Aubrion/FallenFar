@@ -3,8 +3,8 @@
   <caption></caption>
   <width>2400</width>
   <height>480</height>
-  <vsnap>24</vsnap>
-  <hsnap>24</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-184</xoffset>
-    <yoffset>-10</yoffset>
+    <xoffset>-56</xoffset>
+    <yoffset>-102</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -56,11 +56,26 @@
     <instance objName="obj_push_dummy" x="360" y="120" name="inst_B64F6295" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cam" x="216" y="216" name="inst_AE57CAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helm" x="192" y="240" name="inst_4D7695FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_greatsword" x="192" y="144" name="inst_36ED43B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="24" y="72" name="inst_9F205E17" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="48" y="384" name="inst_C96C0E8A" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="24" y="48" name="inst_D8C81E66" locked="0" code="" scaleX="19" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="480" y="48" name="inst_A30C10C8" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="324" y="211" name="inst_1E3E24B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="292" y="290" name="inst_96D82A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="388" y="311" name="inst_21D081FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="123" y="293" name="inst_C6C69DED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="128" y="205" name="inst_19DB83B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="282" y="120" name="inst_8990F3E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="251" y="174" name="inst_FDB2254B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="234" y="278" name="inst_9C746C16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="324" y="353" name="inst_BB11FA74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="critter_frog" x="184" y="165" name="inst_74150E86" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_greatsword" x="194" y="269" name="inst_BB5EBBF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_node_iron" x="337" y="274" name="inst_8DC4D350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_node_iron" x="250" y="330" name="inst_9731C816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_node_iron" x="95" y="249" name="inst_B16AFD38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="143" y="313" name="inst_E3676EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="358" y="247" name="inst_BE24A5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="264" y="240" w="480" h="240" xo="0" yo="0" id="10000001" name="inst_CD2BB086" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
