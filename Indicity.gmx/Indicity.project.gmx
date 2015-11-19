@@ -69,11 +69,52 @@
         </sprites>
       </sprites>
       <sprites name="Weapons">
+        <sprites name="Axes">
+          <sprite>sprites\spr_axe_cyber</sprite>
+          <sprite>sprites\spr_axe_cyberscythe</sprite>
+        </sprites>
         <sprites name="Greatswords">
           <sprite>sprites\spr_gs_cyber_1</sprite>
           <sprite>sprites\spr_gs_cyber_2</sprite>
           <sprite>sprites\spr_gs_cyber_3</sprite>
           <sprite>sprites\spr_shihozo_shikai</sprite>
+          <sprite>sprites\spr_greatsword_gravity</sprite>
+          <sprite>sprites\spr_greatsword_encrypt</sprite>
+          <sprite>sprites\spr_greatsword_eyesofhorace</sprite>
+          <sprite>sprites\spr_greatsword_fluffy</sprite>
+          <sprite>sprites\spr_greatsword_glass</sprite>
+          <sprite>sprites\spr_greatsword_goon</sprite>
+          <sprite>sprites\spr_greatsword_horn</sprite>
+          <sprite>sprites\spr_greatsword_knight</sprite>
+          <sprite>sprites\spr_greatsword_laser</sprite>
+          <sprite>sprites\spr_greatsword_lighting</sprite>
+          <sprite>sprites\spr_greatsword_luceker</sprite>
+          <sprite>sprites\spr_greatsword_magnetion</sprite>
+          <sprite>sprites\spr_greatsword_molten</sprite>
+          <sprite>sprites\spr_greatsword_mummy</sprite>
+          <sprite>sprites\spr_greatsword_nature</sprite>
+          <sprite>sprites\spr_greatsword_protector</sprite>
+          <sprite>sprites\spr_greatsword_purplehaze</sprite>
+          <sprite>sprites\spr_greatsword_rootsandbranches</sprite>
+          <sprite>sprites\spr_greatsword_thecore</sprite>
+          <sprite>sprites\spr_greatsword_zabuza</sprite>
+          <sprite>sprites\spr_greatsword_virus</sprite>
+          <sprite>sprites\spr_greatsword_wood</sprite>
+        </sprites>
+        <sprites name="Hammers">
+          <sprite>sprites\spr_hammer_justice</sprite>
+          <sprite>sprites\spr_hammer_purplun</sprite>
+          <sprite>sprites\spr_hammer_beserker</sprite>
+        </sprites>
+        <sprites name="Spears">
+          <sprite>sprites\spr_spear_crystal</sprite>
+          <sprite>sprites\spr_spear_saphire</sprite>
+          <sprite>sprites\spr_spear_gold</sprite>
+          <sprite>sprites\spr_spear_plumber</sprite>
+        </sprites>
+        <sprites name="Swords">
+          <sprite>sprites\spr_sword_gravity</sprite>
+          <sprite>sprites\spr_sword_redstone</sprite>
         </sprites>
       </sprites>
       <sprites name="Gathering Tools">
