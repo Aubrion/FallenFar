@@ -232,6 +232,24 @@
       <sprite>sprites\spr_dummy_enemy</sprite>
       <sprite>sprites\spr_dummy_friendly</sprite>
     </sprites>
+    <sprites name="World">
+      <sprites name="Decoration">
+        <sprites name="Forest">
+          <sprite>sprites\spr_deco_forest_flower</sprite>
+          <sprite>sprites\spr_deco_forest_grass</sprite>
+          <sprite>sprites\spr_deco_forest_leaves</sprite>
+          <sprite>sprites\spr_deco_forest_leavesanimation</sprite>
+          <sprite>sprites\spr_deco_forest_log</sprite>
+          <sprite>sprites\spr_deco_forest_mushroom</sprite>
+          <sprite>sprites\spr_deco_forest_rock</sprite>
+          <sprite>sprites\spr_deco_forest_pond</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Probs">
+        <sprite>sprites\spr_prob_frog</sprite>
+        <sprite>sprites\spr_prob_levelup</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Tileset">
