@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_none</sprite>
     <sprites name="Character">
       <sprite>sprites\spr_player</sprite>
       <sprites name="Eyes">
@@ -212,6 +211,16 @@
         <sprite>sprites\e_chaos_icon</sprite>
       </sprites>
     </sprites>
+    <sprites name="Monsters">
+      <sprites name="Trufflin">
+        <sprite>sprites\spr_enemy_trufflin_idle</sprite>
+        <sprite>sprites\spr_enemy_trufflin_walk</sprite>
+        <sprite>sprites\spr_enemy_trufflin_attack</sprite>
+        <sprite>sprites\spr_enemy_trufflin_hit</sprite>
+        <sprite>sprites\spr_enemy_trufflin_die</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_none</sprite>
     <sprites name="System Sprites">
       <sprites name="Blocks">
         <sprite>sprites\spr_block_6_2_1</sprite>
