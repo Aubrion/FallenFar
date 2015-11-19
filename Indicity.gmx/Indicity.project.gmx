@@ -249,6 +249,25 @@
         <sprite>sprites\spr_prob_frog</sprite>
         <sprite>sprites\spr_prob_levelup</sprite>
       </sprites>
+      <sprites name="Gathering Resources">
+        <sprites name="Ore Nodes">
+          <sprite>sprites\spr_node_bronze</sprite>
+          <sprite>sprites\spr_node_iron</sprite>
+          <sprite>sprites\spr_node_silver</sprite>
+          <sprite>sprites\spr_node_gold</sprite>
+          <sprite>sprites\spr_node_mithril</sprite>
+          <sprite>sprites\spr_node_adamant</sprite>
+          <sprite>sprites\spr_node_bloodstone</sprite>
+          <sprite>sprites\spr_node_magicite</sprite>
+          <sprite>sprites\spr_node_darqantium</sprite>
+          <sprite>sprites\spr_node_empty</sprite>
+        </sprites>
+        <sprites name="Trees">
+          <sprite>sprites\spr_tree1</sprite>
+          <sprite>sprites\spr_treebottom</sprite>
+          <sprite>sprites\spr_treeshadow</sprite>
+        </sprites>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
