@@ -42,6 +42,30 @@
           <sprite>sprites\helm_example</sprite>
           <sprite>sprites\spr_hm_shihozo_shikai</sprite>
           <sprite>sprites\spr_hm_shihozo</sprite>
+          <sprite>sprites\spr_helmet_bandana</sprite>
+          <sprite>sprites\spr_helmet_beserker</sprite>
+          <sprite>sprites\spr_helmet_cowboy</sprite>
+          <sprite>sprites\spr_helmet_crown</sprite>
+          <sprite>sprites\spr_helmet_encript</sprite>
+          <sprite>sprites\spr_helmet_gravity</sprite>
+          <sprite>sprites\spr_helmet_horn</sprite>
+          <sprite>sprites\spr_helmet_indian</sprite>
+          <sprite>sprites\spr_helmet_hunter</sprite>
+          <sprite>sprites\spr_helmet_knight</sprite>
+          <sprite>sprites\spr_helmet_laser</sprite>
+          <sprite>sprites\spr_helmet_laurel</sprite>
+          <sprite>sprites\spr_helmet_legendaryking</sprite>
+          <sprite>sprites\spr_helmet_luceker</sprite>
+          <sprite>sprites\spr_helmet_magichat</sprite>
+          <sprite>sprites\spr_helmet_pan</sprite>
+          <sprite>sprites\spr_helmet_protector</sprite>
+          <sprite>sprites\spr_helmet_purplehaze</sprite>
+          <sprite>sprites\spr_helmet_redwolf</sprite>
+          <sprite>sprites\spr_helmet_smiley</sprite>
+          <sprite>sprites\spr_helmet_gentleman</sprite>
+          <sprite>sprites\spr_helmet_virus</sprite>
+          <sprite>sprites\spr_helmet_woodsteel</sprite>
+          <sprite>sprites\spr_helmet_zabuza</sprite>
         </sprites>
       </sprites>
       <sprites name="Weapons">
