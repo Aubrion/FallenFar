@@ -159,7 +159,11 @@
       <sprite>sprites\spr_dummy_friendly</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Tileset">
+      <background>background\tile_grass</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_element_colors.gml</script>
