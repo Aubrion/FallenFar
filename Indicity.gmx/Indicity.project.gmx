@@ -52,6 +52,28 @@
           <sprite>sprites\spr_shihozo_shikai</sprite>
         </sprites>
       </sprites>
+      <sprites name="Ingots">
+        <sprite>sprites\spr_ingot_bronze</sprite>
+        <sprite>sprites\spr_ingot_iron</sprite>
+        <sprite>sprites\spr_ingot_silver</sprite>
+        <sprite>sprites\spr_ingot_gold</sprite>
+        <sprite>sprites\spr_ingot_mithril</sprite>
+        <sprite>sprites\spr_ingot_adamant</sprite>
+        <sprite>sprites\spr_ingot_bloodstone</sprite>
+        <sprite>sprites\spr_ingot_magicite</sprite>
+        <sprite>sprites\spr_ingot_darqantium</sprite>
+      </sprites>
+      <sprites name="Ores">
+        <sprite>sprites\spr_ore_bronze</sprite>
+        <sprite>sprites\spr_ore_iron</sprite>
+        <sprite>sprites\spr_ore_silver</sprite>
+        <sprite>sprites\spr_ore_gold</sprite>
+        <sprite>sprites\spr_ore_mithril</sprite>
+        <sprite>sprites\spr_ore_adamant</sprite>
+        <sprite>sprites\spr_ore_bloodstone</sprite>
+        <sprite>sprites\spr_ore_magicite</sprite>
+        <sprite>sprites\spr_ore_darqantium</sprite>
+      </sprites>
     </sprites>
     <sprites name="Lynx">
       <sprites name="Projectiles">
