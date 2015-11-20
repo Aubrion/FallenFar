@@ -49,6 +49,7 @@ scr_enum_elements();
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>///Player global variables
 global.attackspeed=1
 </string>
@@ -72,11 +73,13 @@ global.attackspeed=1
           <argument>
             <kind>1</kind>
             <string>///Enums
+=======
             <string>///Initialising Scripts
 scr_controls();
 scr_fullscreen();
 scr_lynx_init();
 scr_element_colors();
+>>>>>>> refs/remotes/origin/Artwork
 </string>
           </argument>
         </arguments>

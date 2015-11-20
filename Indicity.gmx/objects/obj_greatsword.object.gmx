@@ -143,6 +143,7 @@ if state=3
           </argument>
         </arguments>
       </action>
+<<<<<<< HEAD
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -194,6 +195,8 @@ switch (state)
           </argument>
         </arguments>
       </action>
+=======
+>>>>>>> refs/remotes/origin/Artwork
     </event>
   </events>
   <PhysicsObject>0</PhysicsObject>
