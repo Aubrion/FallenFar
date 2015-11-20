@@ -16,7 +16,11 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
+<<<<<<< HEAD
     <w>1024</w>
+=======
+    <w>1008</w>
+>>>>>>> refs/remotes/origin/Artwork
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -51,6 +55,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
+<<<<<<< HEAD
     <instance objName="obj_player" x="192" y="336" name="inst_81F4675F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_regelaar" x="0" y="0" name="inst_F6064CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cam" x="216" y="216" name="inst_AE57CAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -78,6 +83,26 @@
     <instance objName="obj_tree_2" x="384" y="300" name="inst_3E7FB6AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="258" y="180" name="inst_CDEEACFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="223" y="184" name="inst_FBD163FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+=======
+    <instance objName="obj_regelaar" x="0" y="0" name="inst_F6064CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="256" y="224" name="inst_81F4675F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="72" y="96" name="inst_6C5ED5D2" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="96" y="72" name="inst_99D13251" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="408" y="96" name="inst_1C4B1C26" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="96" y="336" name="inst_ACA60CA0" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="144" y="168" name="inst_B64F6295" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="144" y="240" name="inst_B3DD4565" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="240" y="264" name="inst_45DEEDBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="312" y="240" name="inst_026CB1EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="312" y="144" name="inst_F3E199FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_push_dummy" x="240" y="144" name="inst_CBC1CD63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cam" x="216" y="216" name="inst_AE57CAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_helm" x="192" y="240" name="inst_4D7695FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_greatsword" x="240" y="192" name="inst_6B81E2DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="144" y="120" name="inst_3CD45023" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dummy_enemy" x="144" y="120" name="inst_5E360266" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dummy_friendly" x="360" y="120" name="inst_414719D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+>>>>>>> refs/remotes/origin/Artwork
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="264" y="240" w="480" h="240" xo="0" yo="0" id="10000001" name="inst_CD2BB086" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

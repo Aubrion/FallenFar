@@ -78,6 +78,7 @@
       <sprite>sprites\e_ancient_icon</sprite>
       <sprite>sprites\e_chaos_icon</sprite>
     </sprites>
+<<<<<<< HEAD
     <sprites name="polearm">
       <sprites name="scythes">
         <sprite>sprites\spr_sc_reaper</sprite>
@@ -148,6 +149,15 @@
     <sprite>sprites\spr_tree_2_mask</sprite>
     <sprite>sprites\spr_tree_2</sprite>
     <sprite>sprites\spr_node_outline</sprite>
+=======
+    <sprites name="Lynx">
+      <sprites name="Projectiles">
+        <sprite>sprites\spr_lynx_projectile_0</sprite>
+      </sprites>
+    </sprites>
+    <sprite>sprites\spr_dummy_enemy</sprite>
+    <sprite>sprites\spr_dummy_friendly</sprite>
+>>>>>>> refs/remotes/origin/Artwork
   </sprites>
   <backgrounds name="background">
     <background>background\tile_example</background>
@@ -161,6 +171,7 @@
     <script>scripts\scr_mass.gml</script>
     <script>scripts\scr_fullscreen.gml</script>
     <script>scripts\scr_shake_view.gml</script>
+<<<<<<< HEAD
     <scripts name="player">
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
@@ -203,6 +214,59 @@
     <script>scripts\scr_blur.gml</script>
     <script>scripts\create_mask_object.gml</script>
     <script>scripts\draw_shapes.gml</script>
+=======
+    <scripts name="greatsword">
+      <script>scripts\greatsword_unsheated.gml</script>
+      <script>scripts\greatsword_sheated.gml</script>
+    </scripts>
+    <scripts name="Lynx">
+      <script>scripts\LYNX_CREATION_GUIDE_WIP.gml</script>
+      <scripts name="Body">
+        <script>scripts\scr_lynx_body_example.gml</script>
+        <script>scripts\scr_lynx_body_meteor_strike.gml</script>
+      </scripts>
+      <scripts name="Mind">
+        <script>scripts\scr_lynx_mind_projectile.gml</script>
+      </scripts>
+      <scripts name="Element">
+        <script>scripts\scr_lynx_element_death.gml</script>
+        <script>scripts\scr_lynx_element_earth.gml</script>
+        <script>scripts\scr_lynx_element_electro.gml</script>
+        <script>scripts\scr_lynx_element_fire.gml</script>
+        <script>scripts\scr_lynx_element_life.gml</script>
+        <script>scripts\scr_lynx_element_water.gml</script>
+        <script>scripts\scr_lynx_element_wind.gml</script>
+      </scripts>
+      <scripts name="Artificial">
+        <script>scripts\scr_lynx_artificial_damage_boost.gml</script>
+        <script>scripts\scr_lynx_artificial_healing_touch.gml</script>
+      </scripts>
+      <scripts name="Skills">
+        <script>scripts\scr_lynx_skill_element_add.gml</script>
+        <script>scripts\scr_lynx_skill_elements_combine.gml</script>
+        <script>scripts\scr_lynx_skill_id_sort.gml</script>
+        <script>scripts\scr_lynx_skill_init.gml</script>
+        <script>scripts\scr_lynx_skill_part_finished.gml</script>
+        <script>scripts\scr_lynx_skill_remove.gml</script>
+        <script>scripts\scr_lynx_skill_set.gml</script>
+        <script>scripts\scr_lynx_skill_weapon_hit.gml</script>
+      </scripts>
+      <scripts name="Skill effects">
+        <script>scripts\scr_lynx_skill_create_projectile.gml</script>
+      </scripts>
+      <script>scripts\scr_lynx_init.gml</script>
+      <script>scripts\scr_lynx_skill_hit.gml</script>
+      <script>scripts\scr_lynx_skill_object_init.gml</script>
+    </scripts>
+    <scripts name="player">
+      <script>scripts\player_attack_movement.gml</script>
+      <script>scripts\player_movement.gml</script>
+    </scripts>
+    <scripts name="Enums">
+      <script>scripts\scr_enum_lynx_type.gml</script>
+      <script>scripts\scr_enum_elements.gml</script>
+    </scripts>
+>>>>>>> refs/remotes/origin/Artwork
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
@@ -231,6 +295,9 @@
     </objects>
     <objects name="Parents">
       <object>objects\obj_collision_parent</object>
+      <object>objects\obj_enemy_parent</object>
+      <object>objects\obj_friendly_parent</object>
+      <object>objects\obj_lynx_projectile_parent</object>
       <object>objects\obj_weapon_parent</object>
       <object>objects\obj_node_parent</object>
       <object>objects\obj_twohanded</object>
@@ -245,6 +312,14 @@
     <objects name="decoration">
       <object>objects\obj_tree_2</object>
     </objects>
+    <objects name="Lynx">
+      <object>objects\obj_lynx</object>
+      <objects name="Projectiles">
+        <object>objects\obj_lynx_projectile0</object>
+      </objects>
+    </objects>
+    <object>objects\obj_dummy_enemy</object>
+    <object>objects\obj_dummy_friendly</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\test_room</room>
