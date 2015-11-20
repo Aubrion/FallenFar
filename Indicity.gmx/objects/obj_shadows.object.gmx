@@ -27,12 +27,13 @@
             <kind>1</kind>
             <string>///instances lijst
 i_obj_tree_2=obj_tree_2
+
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -50,7 +51,7 @@ i_obj_tree_2=obj_tree_2
           <argument>
             <kind>1</kind>
             <string>///init drawing
-draw_set_alpha(0.15)
+draw_set_alpha(0.5)
 draw_set_color(c_black)
 </string>
           </argument>
@@ -73,10 +74,10 @@ draw_set_color(c_black)
           <argument>
             <kind>1</kind>
             <string>///obj_tree_2
- with (obj_tree_2)
- {
+with (obj_tree_2)
+{
  draw_ellipse(x-64,y+12,x+64,y-12,0)
- }
+}
 </string>
           </argument>
         </arguments>
@@ -98,10 +99,10 @@ draw_set_color(c_black)
           <argument>
             <kind>1</kind>
             <string>///obj_node
- with (obj_node_parent)
- {
+with (obj_node_parent)
+{
  draw_ellipse(x-8,y+3,x+8,y-3,0)
- }
+}
 </string>
           </argument>
         </arguments>
@@ -124,6 +125,83 @@ draw_set_color(c_black)
             <kind>1</kind>
             <string>///END
 draw_set_alpha(1)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///free ram
+surface_free(surfaceA);
+surface_free(surfaceB);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw surface init
+surfaceA = surface_create(room_width, room_height);
+surfaceB = surface_create(room_width, room_height);
+draw_shapes(0);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw surface
+draw_surface(surfaceB, 0, 0);
 </string>
           </argument>
         </arguments>

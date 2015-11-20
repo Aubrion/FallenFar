@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-56</xoffset>
-    <yoffset>-102</yoffset>
+    <xoffset>-62</xoffset>
+    <yoffset>-6</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -53,7 +53,6 @@
   <instances>
     <instance objName="obj_player" x="192" y="336" name="inst_81F4675F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_regelaar" x="0" y="0" name="inst_F6064CFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_push_dummy" x="360" y="120" name="inst_B64F6295" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cam" x="216" y="216" name="inst_AE57CAB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_helm" x="192" y="240" name="inst_4D7695FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="24" y="72" name="inst_9F205E17" locked="0" code="" scaleX="1" scaleY="14" colour="4294967295" rotation="0"/>
@@ -74,8 +73,11 @@
     <instance objName="obj_node_iron" x="337" y="274" name="inst_8DC4D350" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_node_iron" x="250" y="330" name="inst_9731C816" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_node_iron" x="95" y="249" name="inst_B16AFD38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_2" x="143" y="313" name="inst_E3676EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_2" x="358" y="247" name="inst_BE24A5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="214" y="192" name="inst_E3676EED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="272" y="193" name="inst_BE24A5EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="384" y="300" name="inst_3E7FB6AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="258" y="180" name="inst_CDEEACFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_2" x="223" y="184" name="inst_FBD163FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="&lt;undefined&gt;" x="264" y="240" w="480" h="240" xo="0" yo="0" id="10000001" name="inst_CD2BB086" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -127,6 +127,7 @@
       <sprite>sprites\spr_frog_2</sprite>
     </sprites>
     <sprites name="nodes">
+      <sprite>sprites\mask_node</sprite>
       <sprite>sprites\spr_node_darqantium</sprite>
       <sprite>sprites\spr_node_bloodstone</sprite>
       <sprite>sprites\spr_node_magicite</sprite>
@@ -137,9 +138,8 @@
       <sprite>sprites\spr_node_iron</sprite>
       <sprite>sprites\spr_node_iron_shadow</sprite>
       <sprite>sprites\spr_node_bronze</sprite>
+      <sprite>sprites\spr_node_empty</sprite>
     </sprites>
-    <sprite>sprites\spr_node_empty</sprite>
-    <sprite>sprites\mask_node</sprite>
     <sprite>sprites\spr_tree1_bottom</sprite>
     <sprite>sprites\spr_tree1_middle</sprite>
     <sprite>sprites\spr_tree3_top</sprite>
@@ -202,6 +202,7 @@
     </scripts>
     <script>scripts\scr_blur.gml</script>
     <script>scripts\create_mask_object.gml</script>
+    <script>scripts\draw_shapes.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
