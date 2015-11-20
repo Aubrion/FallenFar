@@ -78,7 +78,6 @@
       <sprite>sprites\e_ancient_icon</sprite>
       <sprite>sprites\e_chaos_icon</sprite>
     </sprites>
-<<<<<<< HEAD
     <sprites name="polearm">
       <sprites name="scythes">
         <sprite>sprites\spr_sc_reaper</sprite>
@@ -149,7 +148,6 @@
     <sprite>sprites\spr_tree_2_mask</sprite>
     <sprite>sprites\spr_tree_2</sprite>
     <sprite>sprites\spr_node_outline</sprite>
-=======
     <sprites name="Lynx">
       <sprites name="Projectiles">
         <sprite>sprites\spr_lynx_projectile_0</sprite>
@@ -157,7 +155,6 @@
     </sprites>
     <sprite>sprites\spr_dummy_enemy</sprite>
     <sprite>sprites\spr_dummy_friendly</sprite>
->>>>>>> refs/remotes/origin/Artwork
   </sprites>
   <backgrounds name="background">
     <background>background\tile_example</background>
@@ -171,7 +168,6 @@
     <script>scripts\scr_mass.gml</script>
     <script>scripts\scr_fullscreen.gml</script>
     <script>scripts\scr_shake_view.gml</script>
-<<<<<<< HEAD
     <scripts name="player">
       <script>scripts\player_attack_movement.gml</script>
       <script>scripts\player_movement.gml</script>
@@ -214,7 +210,6 @@
     <script>scripts\scr_blur.gml</script>
     <script>scripts\create_mask_object.gml</script>
     <script>scripts\draw_shapes.gml</script>
-=======
     <scripts name="greatsword">
       <script>scripts\greatsword_unsheated.gml</script>
       <script>scripts\greatsword_sheated.gml</script>
@@ -266,7 +261,6 @@
       <script>scripts\scr_enum_lynx_type.gml</script>
       <script>scripts\scr_enum_elements.gml</script>
     </scripts>
->>>>>>> refs/remotes/origin/Artwork
   </scripts>
   <objects name="objects">
     <object>objects\obj_cam</object>
